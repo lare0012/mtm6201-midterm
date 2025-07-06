@@ -664,6 +664,8 @@ hr {
 
 .footer p {
   color: var(--white);
+  margin-top: 40px;
+  font-size: 1rem;
 }
 
 .close-menu {
@@ -1028,41 +1030,5 @@ hr {
 
   .footer .container {
     padding: 90px 40px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .nav-menu ul {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    z-index: 2000;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .nav-menu ul.active {
-    display: flex;
-  }
-  .nav-menu ul li {
-    margin: 32px 0;
-  }
-  .nav-menu ul a {
-    font-size: 2rem;
-    color: var(--white);
-  }
-  .nav-menu ul.active ~ .close-menu,
-  .close-menu.active {
-    display: block;
   }
 }
