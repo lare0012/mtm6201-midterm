@@ -703,9 +703,11 @@ hr {
     padding: 0 20px;
     margin-bottom: 100px;
   }
-
+.welcome-content h2 {
+    font-size: 2.375rem;
+  }
   .welcome-content h3 {
-    font-size: 3rem;
+    font-size: 1.75rem;
   }
 
   .coffee-grid {
