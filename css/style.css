@@ -280,19 +280,6 @@ hr {
   transform-origin: center;
 }
 
-.menu-button.active .hamburger-line:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-
-.menu-button.active .hamburger-line:nth-child(2) {
-  opacity: 0;
-  transform: scaleX(0);
-}
-
-.menu-button.active .hamburger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
 .hero-section {
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
