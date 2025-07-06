@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My Coffee House</title>
+</head>
+
+<body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to navigation</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
+
+    <div class="main-container">
+        <nav class="navbar" role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <div class="container">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="images/my-coffee-shop-logo.svg" alt="My Coffee Shop" class="logo-img" itemprop="logo">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <button class="menu-button" aria-label="Menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <button class="close-menu" aria-label="Close Menu">&times;</button>
+                    <ul>
+                        <li><a href="#about-us" itemprop="url">About Us</a></li>
+                        <li><a href="#menu" itemprop="url">Menu</a></li>
+                        <li><a href="#locations" itemprop="url">Locations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main id="main" role="main" itemscope itemtype="https://schema.org/WebPageElement">
+            <section class="hero-section" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+                <div class="hero-background"></div>
+                <div class="hero-content">
+                    <h1 itemprop="headline">Experience coffee like never before</h1>
+                    <h2 itemprop="description">We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</h2>
+                    <button class="cta-button" itemprop="potentialAction">Explore our menu</button>
+                </div>
+            </section>
+
+            <section class="about-section" id="about-us" role="region" aria-label="About Us" itemscope itemtype="https://schema.org/AboutPage">
+                <div class="container">
+                    <div class="welcome-content">
+                        <h2 itemprop="about">Welcome to My Coffee House</h2>
+                        <h3>Experience a New Way To Taste Coffee</h3>
+                    </div>
+                    <div class="coffee-grid">
+                        <div class="coffee-image large">
+                            <img src="images/latte.jpeg" alt="Coffee Shop" itemprop="image">
+                        </div>
+                        <div class="coffee-row">
+                            <div class="coffee-image small">
+                                <img src="images/coffee-beans.jpeg" alt="Coffee Beans" itemprop="image">
+                            </div>
+                            <div class="coffee-image small">
+                                <img src="images/pouring-coffee.jpeg" alt="Latte" itemprop="image">
+                            </div>
+                        </div>
+                        <div class="coffee-row">
+                            <div class="coffee-image small">
+                                <img src="images/three-cups.jpeg" alt="Pouring Coffee" itemprop="image">
+                            </div>
+                            <div class="coffee-image small">
+                                <img src="images/smiling-employee.jpeg" alt="Three Coffee Cups" itemprop="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offerings-section">
+                <div class="container">
+                    <div class="offerings-header">
+                        <h2>What We Offer</h2>
+                        <h3>Why Visit Us?</h3>
+                    </div>
+                    
+                    <div class="offerings-cards">
+                        <div class="offering-card">
+                            <div class="icon-container">
+                                <img src="images/fair-trade.svg" alt="Fair Trade Coffee">
+                            </div>
+                            <h4>Fair Trade Coffee</h4>
+                            <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+                        </div>
+                        
+                        <div class="offering-card">
+                            <div class="icon-container">
+                                <img src="images/local-baked-goods.svg" alt="Local Baked Goods">
+                            </div>
+                            <h4>Local Baked Goods</h4>
+                            <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+                        </div>
+                        
+                        <div class="offering-card">
+                            <div class="icon-container">
+                                <img src="images/made-with-love.svg" alt="Made with Love">
+                            </div>
+                            <h4>Made With Love</h4>
+                            <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-location-section" id="menu" role="region" aria-label="Menu and Locations" itemscope itemtype="https://schema.org/Restaurant">
+                <div class="menu-location-bg"></div>
+                <div class="menu-location-overlay"></div>
+                <div class="menu-location-container">
+                    <div class="menu-block">
+                        <h2 itemprop="hasMenu">Our Menu</h2>
+                        <h3>Explore What We Have To Offer You</h3>
+                        <button class="cta-button white" itemprop="potentialAction">Explore our menu</button>
+                    </div>
+                    <div class="location-block" id="locations" itemscope itemtype="https://schema.org/LocalBusiness">
+                        <h2 itemprop="name">Locations</h2>
+                        <h3>Find Your Nearest Coffee Shop</h3>
+                        <button class="cta-button outlined" itemprop="potentialAction">View Locations</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-us-section" role="region" aria-label="About Us Story" itemscope itemtype="https://schema.org/Organization">
+                <div class="about-us-container">
+                    <div class="about-us-img">
+                        <img src="images/about-us.jpeg" alt="Smiling employee at My Coffee House" itemprop="image">
+                    </div>
+                    <div class="about-us-text">
+                        <h2 itemprop="name">About Us</h2>
+                        <h3>Read Our Story</h3>
+                        <p itemprop="description">In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
+                        <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
+                        <button class="cta-button black" itemprop="potentialAction">Read Our Story</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-testimonials" role="complementary" aria-label="Testimonials" itemscope itemtype="https://schema.org/Review">
+              <div class="wrapper">
+                <p class="text">Testimonials</p>
+                <h2>What our customers say about us</h2>
+                <div class="customers-testimonials">
+                  <div class="testimonial" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                    <img src="images/testimonial-1.jpeg" title="testimonial-1" alt="Image of a young woman with long hair, wearing a black sweater, smiling while savoring a cup of espresso." itemprop="image">
+                    <div class="review">
+                      <p itemprop="reviewBody">"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
+                      <p class="text customer" itemprop="author">Jane D., Toronto</p>
+                    </div>
+                  </div>
+                  <div class="testimonial" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                    <img src="images/testimonial-2.jpeg" title="testimonial-2" alt="Image of a man sitting in the coffee shop, smiling as he observes towards the horizon." itemprop="image">
+                    <div class="review">
+                      <p itemprop="reviewBody">"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
+                      <p class="text customer" itemprop="author">Scott S., Ottawa</p>
+                    </div>
+                  </div>
+                  <div class="testimonial" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                    <img src="images/testimonial-3.jpeg" title="testimonial-3" alt="Image of a smiling woman with curly hair holding a cold latte, using a laptop." itemprop="image">
+                    <div class="review">
+                      <p itemprop="reviewBody">"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
+                      <p class="text customer" itemprop="author">Susie F., Ottawa </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+            <div class="container">
+                <hr>
+                <p itemprop="copyrightHolder">&copy; My Coffee Company 2025</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
