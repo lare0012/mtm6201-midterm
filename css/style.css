@@ -28,7 +28,7 @@ h4,
 nav {
   text-transform: uppercase;
   font-family: var(--ff-ss);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h1 {
@@ -65,7 +65,7 @@ hr {
 .cta-button {
   font-family: var(--ff-ss-two);
   font-size: 0.9rem;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 0.8em 1.2em;
   background-color: var(--white);
@@ -899,13 +899,15 @@ hr {
     color: var(--white);
     padding: 15px 20px;
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-weight: 400;
+    transition: border bottom 0.5s ease;
+    transition: color 0.5s ease;
   }
 
   .nav-menu ul a:hover,
   .nav-menu ul a:focus {
     color: var(--light);
+    border-bottom: 2px solid var(--light);
   }
 
   .menu-button {
