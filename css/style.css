@@ -667,6 +667,9 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    max-width: 100%;
+  }
   h1 {
     font-size: 3rem;
   }
@@ -829,6 +832,10 @@ hr {
 }
 
 @media screen and (min-width: 1200px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+  }
   .container {
     margin: 0 auto;
     padding: 0;
