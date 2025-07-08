@@ -350,12 +350,6 @@ hr {
   line-height: 1.2;
 }
 
-.coffee-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .coffee-image {
   overflow: hidden;
 }
