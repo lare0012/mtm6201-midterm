@@ -756,31 +756,7 @@ hr {
   .location-block h2 {
     font-size: 2.375rem;
   }
-  .about-us-section {
-    padding: 0 20px;
-    margin-bottom: 100px;
-  }
 
-  .about-us-container {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: center;
-  }
-
-  .about-us-img {
-    flex: 1;
-  }
-
-  .about-us-img img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-  }
-
-  .about-us-text {
-    flex: 1;
-  }
   .wrapper {
     width: 710px;
     margin: 0px auto;
@@ -972,20 +948,28 @@ hr {
     margin-top: 30px;
   }
 
+  .about-us-section {
+    padding: 0 20px;
+    margin-bottom: 100px;
+  }
+
   .about-us-container {
-    padding: 0 75px;
-    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    max-width: var(--mw);
     margin: 0 auto;
   }
 
-  .about-us-img {
-    width: 400px;
+  .about-us-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
   }
 
   .about-us-text {
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    flex: 1;
   }
 
   .testimonials-section {
