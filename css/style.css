@@ -157,8 +157,8 @@ hr {
   right: 0;
   z-index: 1000;
   border-bottom: 3px solid #ffffff;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: var(--mw);
+  margin: 0 10px;
 }
 
 .navbar .container {
@@ -166,7 +166,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 17.5px;
+  padding: 10px 0px;
   height: 45px;
 }
 
@@ -366,7 +366,7 @@ hr {
 }
 
 .coffee-image.large {
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .coffee-row {
@@ -376,6 +376,7 @@ hr {
 }
 
 .coffee-image.small {
+  margin-top: 20px;
   border-radius: 10px;
 }
 
@@ -746,13 +747,6 @@ hr {
     justify-self: center;
   }
 
-  .menu-location-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0 40px;
-  }
-
   .menu-block,
   .location-block {
     flex: 1;
@@ -854,13 +848,16 @@ hr {
   }
 
   .navbar .container {
-    padding: 0 90px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: none;
     height: 80px;
+  }
+
+  .navbar {
+    margin: 0 auto;
   }
 
   .logo {
@@ -953,10 +950,11 @@ hr {
     height: 400px;
   }
 
-  .menu-location-container {
-    padding: 0 75px;
-    max-width: 1200px;
-    margin: 0 auto;
+    .menu-location-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 40px;
   }
 
   .menu-block h2,
