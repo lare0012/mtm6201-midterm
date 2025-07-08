@@ -826,8 +826,7 @@ hr {
 
 @media screen and (min-width: 1200px) {
   body {
-    width: 100%;
-    max-width: 100%;
+   width: 100%;
   }
   .container {
     margin: 0 auto;
