@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-  color: var(--black);
+  color: var(--light);
   font-size: 1.375rem;
 }
 
@@ -336,6 +336,7 @@ hr {
   margin-bottom: 70px;
 }
 
+
 .welcome-content {
   display: flex;
   flex-direction: column;
@@ -344,18 +345,6 @@ hr {
   margin-bottom: 20px;
 }
 
-.welcome-content h2 {
-  color: var(--light);
-  font-size: 1.75rem;
-  margin: 0;
-}
-
-.welcome-content h3 {
-  color: var(--black);
-  font-size: 1.375rem;
-  margin: 0;
-  line-height: 1.2;
-}
 
 .coffee-image {
   overflow: hidden;
@@ -397,12 +386,6 @@ hr {
 .offerings-header {
   text-align: center;
   margin-bottom: 40px;
-}
-
-.offerings-header h2 {
-  color: var(--light);
-  font-size: 1.4rem;
-  margin: 0 0 10px 0;
 }
 
 .offerings-header h3 {
@@ -495,7 +478,7 @@ hr {
 
 .menu-block h3,
 .location-block h3 {
-  color: var(--white);
+  color: var(--light);
   margin: 0 0 20px 0;
 }
 
@@ -503,6 +486,11 @@ hr {
 .location-block button {
   margin-top: 10px;
 }
+
+.offerings-header h3 {
+    margin-bottom: 10px;
+  }
+
 
 .about-us-section {
   padding: 0 10px;
@@ -521,13 +509,11 @@ hr {
 }
 
 .about-us-text h2 {
-  color: var(--light);
-  font-size: 1.4rem;
   margin: 0 0 10px 0;
 }
 
 .about-us-text h3 {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .about-us-text p {
@@ -742,6 +728,7 @@ margin-bottom: 50px;
 
   .offerings-header h3 {
     font-size: 1.75rem;
+    margin-bottom: 10px;
   }
 
   .offerings-cards {
@@ -988,15 +975,10 @@ margin-bottom: 50px;
     padding-right: 75px;
   }
 
-  .wrapper .text {
+  /* .wrapper .text {
     padding-top: 20px;
     font-size: 1rem;
-  }
-
-  .wrapper h2 {
-    font-size: 3rem;
-    padding: 10px 0px 10px 0px;
-  }
+  } */
 
   .customers-testimonials {
     display: grid;
