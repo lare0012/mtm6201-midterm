@@ -186,5 +186,28 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        // Hamburger menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.menu-button');
+            const navMenu = document.querySelector('.nav-menu ul');
+            
+            console.log('Menu button found:', menuButton);
+            console.log('Nav menu found:', navMenu);
+            
+            if (menuButton && navMenu) {
+                menuButton.addEventListener('click', function() {
+                    console.log('Menu button clicked!');
+                    navMenu.classList.toggle('active');
+                    menuButton.classList.toggle('active');
+                    console.log('Menu active class:', navMenu.classList.contains('active'));
+                    console.log('Button active class:', menuButton.classList.contains('active'));
+                });
+            } else {
+                console.error('Menu elements not found!');
+            }
+        });
+    </script>
 </body>
 </html>
