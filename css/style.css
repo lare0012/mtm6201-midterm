@@ -218,98 +218,38 @@ hr {
 }
 
 .nav-menu ul {
-  visibility: hidden;
-  position: fixed;
-  top: 60px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
   right: 0;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   margin: 0;
+  padding: 20px;
   list-style: none;
-  border-radius: 5px 0 0 5px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  width: 40%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: all 0.3s ease-out;
-  pointer-events: none;
-}
-
-.nav-menu ul.active {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
 }
 
 .nav-menu ul li {
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.nav-menu ul li:last-child {
-  border-bottom: none;
+  margin: 15px 0;
 }
 
 .nav-menu ul a {
   color: var(--white);
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.1rem;
   display: block;
   text-align: center;
-  padding: 20px 15px;
   transition: all 0.3s ease;
-  position: relative;
-  letter-spacing: 0.5px;
 }
 
 .nav-menu ul a:hover,
 .nav-menu ul a:focus {
   color: var(--light);
-  background-color: rgba(255, 255, 255, 0.05);
-  transform: translateX(5px);
-}
-
-.nav-menu ul a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--light), var(--dark));
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-
-.nav-menu ul a:hover::after,
-.nav-menu ul a:focus::after {
-  width: 60%;
-}
-
-/* Hamburger menu active state */
-.nav-menu ul.active {
-  display: block;
-}
-
-/* Hamburger button animation when active */
-.menu-button.active .hamburger-line:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
-  background-color: var(--light);
-}
-
-.menu-button.active .hamburger-line:nth-child(2) {
-  opacity: 0;
-  transform: scale(0);
-}
-
-.menu-button.active .hamburger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-  background-color: var(--light);
 }
 
 .menu-button {
@@ -317,39 +257,29 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
   cursor: pointer;
   padding: 0;
-  gap: 4px;
-  border-radius: 8px;
+  gap: 3px;
+  border-radius: 3px;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .menu-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.menu-button.active {
   background-color: rgba(255, 255, 255, 0.15);
-  border-color: var(--light);
+  transform: scale(1.05);
 }
 
 .hamburger-line {
-  width: 20px;
+  width: 18px;
   height: 2px;
   background-color: var(--white);
-  border-radius: 2px;
+  border-radius: 1px;
   transition: all 0.3s ease;
   transform-origin: center;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section {
@@ -927,11 +857,6 @@ margin-bottom: 50px;
     border-radius: 0;
     box-shadow: none;
     z-index: auto;
-  }
-
-  /* Override active state for desktop - menu should always be visible */
-  .nav-menu ul.active {
-    display: flex !important;
   }
 
   .nav-menu ul li {
